@@ -2,6 +2,7 @@ import discord
 from discord.ext import commands  
 from discord import app_commands
 import asyncio
+import getpass
 import os
 
 bot: commands.bot = commands.Bot(command_prefix='!', intents=discord.Intents.all())
@@ -24,7 +25,10 @@ async def load_extensions():
 async def main():
     async with bot:
         await load_extensions()
-        await bot.start('MTU0NjM1NDEyNTE0OTU3NzMwNw.Gkcyz8.1JyPt9DQlRBtluEMMuvBCkIwPMSCbGrWn0VJCI')
+        token = getpass.getpass('Enter the Discord bot token: ').strip()
+        if not token:
+            raise ValueError('A Discord bot token is required to start the bot.')
+        await bot.start(token)
         
 asyncio.run(main())
 
