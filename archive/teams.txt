@@ -1,0 +1,22 @@
+[
+  {
+    "owner_id": 584539388747448321,
+    "team_name": "AUP",
+    "area": "NA"
+  },
+  {
+    "owner_id": 950933393930063952,
+    "team_name": "NSX1",
+    "area": "NA"
+  },
+  {
+    "owner_id": 358356721661640705,
+    "team_name": "HALO",
+    "area": "NA"
+  },
+  {
+    "owner_id": 1290054999673671734,
+    "team_name": "NULL",
+    "area": "NA"
+  }
+]
